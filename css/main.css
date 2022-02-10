@@ -31,6 +31,7 @@ a {text-decoration: none;}
   width: 100%;
   height: 300px;
   background: lightcyan;
+  display: flex;
 }
 #main h1>span {
   font-size: 50px;
@@ -42,6 +43,10 @@ a {text-decoration: none;}
 }
 #main h1 p {
   color: #888;
+}
+#main .intro {
+  width: 500px;
+  height: 200px;
 }
 #content {}
 #content div {
@@ -76,4 +81,8 @@ a {text-decoration: none;}
   width: 100%;
   height: 300px;
   background: lightcoral;
+}
+.scroll_arrow {
+  width: 60px;
+  height: 60px;
 }
