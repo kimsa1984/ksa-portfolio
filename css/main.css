@@ -28,21 +28,41 @@ a {text-decoration: none;}
 }
 #nav a.txtCh {color: rgb(130, 207, 130);}
 #main {
-  width: 100%;
-  height: 300px;
+  width: 500px;
+  padding: 200px 0 0;
+  font-family: sans-serif;
+ 
+  animation-name: main;
+  animation-duration: 2s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  transition: all ease;
   background: lightcyan;
-  display: flex;
 }
 #main h1>span {
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  color: #333;
 }
 #main h1>span:nth-child(2) {
-  font-size: 45px;
+  display: block;
   font-weight: 100;
 }
 #main h1 p {
+  width: 400px;
+  margin: 20px 0 0;
+  text-align: left;
+  line-height: 1.2;
   color: #888;
+}
+#main .main_btn{
+  margin: 50px 0 0;
+  text-align: left;
+}
+#main .main_btn:first-child{
+  margin-right: 10px;
 }
 #main .intro {
   width: 500px;
@@ -54,13 +74,21 @@ a {text-decoration: none;}
   background-image: url(../img/ohsczww5zuzxbuad__1080_790.jpg);
   background-size: cover;
   background-position: center center;
-  width: 100%;
+  width: 50%;
   height: 500px;
 }
 #content .section1 {
   background: yellow;
   width: 100%;
   height: 300px;
+  
+}
+#content .section1 h3{
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-family: sans-serif;
 }
 #content .section2 {
   background: aquamarine;
