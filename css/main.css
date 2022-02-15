@@ -18,6 +18,7 @@ nav {
   transition: 2s ease-in-out;
   background-color: gold;
   opacity: 0.8;
+  z-index: 10;
 }
 nav.fixed {
   background: rgba(0, 0, 0, 0.3);
