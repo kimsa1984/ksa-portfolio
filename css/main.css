@@ -285,7 +285,7 @@ nav a.txtCh{color:green; }
   padding: 1% 1%;
 }
 .portfolio h3 {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 700;
 }
 .portfolio .content_box {
@@ -338,6 +338,7 @@ nav a.txtCh{color:green; }
   height: 100%;
   overflow: hidden;
   background: #fff;
+  
 }
 
 .port_box .screen .textbox{
@@ -351,11 +352,12 @@ nav a.txtCh{color:green; }
 .port_box .screen .textbox span{
   
   width: 100%;
-  font-size: 17px;
+  font-size:20px;
   color: #fff;
   line-height: 1;
+  font-weight: 500;
 }
-.popup{
+.bottom{
   width: 100%;
   height: 100%;
   background-color: cornflowerblue;
