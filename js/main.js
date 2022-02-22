@@ -17,7 +17,7 @@ function scrollController() {
         $("nav a").removeClass("txtCh");
     }
 }
-
+//------상세페이지 -------
 $(function () {
     $('.popbox1').hide();
     $('.popbox2').hide();
