@@ -33,7 +33,7 @@ nav {
   transition: 2s ease-in-out;
   background-color: gold;
   opacity: 0.8;
-  z-index: 10;
+  z-index: 15;
 }
 nav.fixed {
   background: rgba(0, 0, 0, 0.3);
@@ -119,6 +119,7 @@ nav a.txtCh{color:green; }
   animation-delay: .5s;
   animation-fill-mode: forwards;
   transition: all ease;
+  
 }
 .introbox { 
   position: relative;
@@ -238,7 +239,8 @@ nav a.txtCh{color:green; }
   height: 500px;
 } */
 #content .section1 {
-  background: rgb(241, 241, 221);
+	/* background: linear-gradient(rgba(0,255,0,1), rgba(0,255,0,0)); */
+  border-top: 1px solid #dfdddd;
   width: 100%;
   height: 100%;
   padding: 0 160px 0;
@@ -335,16 +337,15 @@ nav a.txtCh{color:green; }
   width: 100%; 
   height: 100%;
   position: absolute;
-  z-index: 10;
   transform: translateY(0px);
-  z-index: 30;
+  z-index: 3;
   transition: all .35s ease-in-out;
 
 
 } 
 [class*="port_box"]>.screen {
   opacity: 0;
-  z-index: 50;
+  z-index: 8;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -373,24 +374,24 @@ nav a.txtCh{color:green; }
   line-height: 1;
   font-weight: 500;
 }
-.bottom{
+ .bottom{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 6;
   display: none;
 }
 [class*="popbox"]{display:none;}
 
-.pop_box {
+[class*="popbox"] {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  z-index: 5;
+  z-index: 9;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -406,7 +407,7 @@ nav a.txtCh{color:green; }
   box-shadow: 1px 1px 8px rgb(0 0 0 0.3 );
   border-radius: 2px 2px 8px 0;
 }
-.pop a>img {width: 95%;}
+.pop img {width:100%;}
 
 .pop_text {
   display: flex;
