@@ -34,6 +34,7 @@ $(function () {
     $(".port_box2").click(function () {
         $(".bottom, .popbox2").fadeIn();
     });
+
     $(".bottom").click(function () {
         $(".bottom, .popbox2").fadeOut();
     });
@@ -52,3 +53,13 @@ $(function () {
         $(".bottom, .popbox4").fadeOut();
     });
 });
+
+// $(function(){
+//     $('.top').click(function(){
+//     $('.popbox1').css('display', 'block');
+//     });
+
+//     $('.bottom').click(function(){
+//     $('.popbox1').css('display', 'none');
+//     });
+//  });
