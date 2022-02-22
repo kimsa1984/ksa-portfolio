@@ -9,6 +9,8 @@ body {font-family: 'Noto Sans KR','Noto Sans CJK KR','Nanum Gothic','malgun goth
   background: #fff;
   scroll-behavior: smooth }
 
+.container {width: 1300px; height: 100%; margin: 0 auto; }
+
 header{
   width: 100%;
   height: 70px;
@@ -55,15 +57,21 @@ nav a.txtCh{color:green; }
 #main {
   width: 100%;
   height: 800px;
+ 
+}
+#main .container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  padding-top: 50px;
 }
-
 .main_textbox{
   width: 48%;
   height: 80%;
-  padding: 160px;
+  padding: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: sans-serif;
   animation-name: main;
   animation-duration: 2s;
@@ -71,6 +79,7 @@ nav a.txtCh{color:green; }
   animation-fill-mode: forwards;
   transition: all ease;
 }
+#main h1 {width: 85%;}
 #main h1>span {
   font-size: 45px;
   font-weight: 400;
@@ -92,20 +101,21 @@ nav a.txtCh{color:green; }
 #main .main_btn{
   margin: 60px 0 0;
   text-align: left;
+  width: 85%;
 }
 #main .main_btn:hover {opacity: 0.8; font-weight: bold;}
 .btn1{
   margin-right: 2px;
-  color: green;
-  border: 1px solid green;
+  color: #35bda4;
+  border: 1px solid #35bda4;
   border-radius: 4px;
   padding: 12px 48px;
 }
 .btn2{
  
-  background-color: green;
+  background-color: #35bda4;
   color: #fff;
-  border: 1px solid green;
+  border: 1px solid #35bda4;
   border-radius: 4px;
   padding: 12px 48px;
 }
@@ -123,7 +133,7 @@ nav a.txtCh{color:green; }
 }
 .introbox { 
   position: relative;
-  width:71%;
+  width:79%;
   height: 85%;
   background-color: #c2edff;
   border-radius: 50%;
@@ -170,8 +180,15 @@ nav a.txtCh{color:green; }
 }
 .scroll_arrow{
   width: 100%;
-  text-align: center;
+  position: absolute;
+  left:  50%;
+  bottom: 10%;
   transform: translateX(-50%);
+  display: block;
+  text-align: center;
+  background: url(../img/172458_down_arrow_icon.png);
+  width: 90px;
+  height: 50px;
   animation-name: scroll;
   animation-iteration-count: infinite;
   animation-duration: .8s;
@@ -281,7 +298,7 @@ nav a.txtCh{color:green; }
   width: 100%;
   height: 1000px;
   text-align: center;
-  background-color: rgb(194, 189, 189);
+  background-color: rgba(219, 216, 216,0.4);
   padding: 1% 1%;
 }
 .portfolio h3 {
@@ -402,10 +419,11 @@ nav a.txtCh{color:green; }
 }
 .pop {
   width: 50%;
-  height: 320px;
+  height:350px;
   overflow: hidden;
+  box-sizing: border-box;
   box-shadow: 1px 1px 8px rgb(0 0 0 0.3 );
-  border-radius: 2px 2px 8px 0;
+  border-radius: 2px 25px 25px 0;
 }
 .pop img {width:100%;}
 
@@ -431,23 +449,38 @@ nav a.txtCh{color:green; }
   background-color:  lightskyblue; 
   color: #333;
 }
-.pop_btn1>a:nth-of-type(3) {
+.pop_btn2 a {
   background-color: #cd4e38; 
   color: #fff;
+  margin-right: 5px;
+  padding: 10px 20px;
+  transition: all 2s;
 }
-.pop_btn1>a:nth-of-type(4) {
+.pop_btn3 a:nth-of-type(1) {
   background-color: burlywood; 
   color: #fff;
+  margin-right: 5px;
+  padding: 10px 20px;
+  transition: all 2s;
 }
-.pop_btn1>a:nth-of-type(5) {
+.pop_btn3>a:nth-of-type(2) {
   background-color: #333; 
   color: #fff;
+  margin-right: 5px;
+  padding: 10px 20px;
+  transition: all 2s;
 }
-.pop_btn1>a:nth-of-type(6) {
+.pop_btn4 a:nth-of-type(1) {
   background-color: #2b343d; 
   color: #fff;
+  margin-right: 5px;
+  padding: 10px 20px;
+  transition: all 2s;
 }
-.pop_btn1>a:nth-of-type(7) {
-  background-color: #2b343d; 
+.pop_btn4>a:nth-of-type(2) {
+  background-color: #16487a; 
   color: #fff;
+  margin-right: 5px;
+  padding: 10px 20px;
+  transition: all 2s;
 }
